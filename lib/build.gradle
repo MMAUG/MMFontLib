@@ -1,0 +1,29 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.12.+'
+  }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+  }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 19
+  buildToolsVersion "20.0.0"
+
+  defaultConfig {
+    applicationId "mmaug.mmfont"
+    minSdkVersion 8
+    targetSdkVersion 19
+  }
+}
+
+apply from: '../gradle-mvn-push.gradle'
