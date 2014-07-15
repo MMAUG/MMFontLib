@@ -25,5 +25,4 @@ public class ZG extends TextView {
 		setTypeface(Typeface.createFromAsset(context.getAssets(),
 				"fonts/zawgyi.ttf"));
 	}
-
 }

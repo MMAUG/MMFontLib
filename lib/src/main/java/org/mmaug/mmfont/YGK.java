@@ -25,5 +25,4 @@ public class YGK extends TextView {
 		setTypeface(Typeface.createFromAsset(context.getAssets(),
 				"fonts/yunghkio.ttf"));
 	}
-
 }

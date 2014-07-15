@@ -26,5 +26,4 @@ public class MM3 extends TextView {
 		setTypeface(Typeface.createFromAsset(context.getAssets(),
 				"fonts/mm3.ttf"));
 	}
-
 }
