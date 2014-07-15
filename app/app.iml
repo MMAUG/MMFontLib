@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="org.mmaug.mmfont" external.system.module.version="1.0.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="org.mmaug.mmfont" external.system.module.version="1.0.0-SNAPSHOT" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="java-gradle" name="Java-Gradle">
       <configuration>
-        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
+        <option name="BUILD_FOLDER_PATH" />
       </configuration>
     </facet>
   </component>
@@ -11,6 +11,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
