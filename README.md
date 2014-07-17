@@ -1,12 +1,26 @@
 MMFont
 ======
 
-Myanmar font embedded TextViews
+Myanmar font embedded TextViews. Currently, it supports
+- Myanmar 3
+- Masterpiece
+- MyMyanmar
+- Yunghkio
+- Zawgyi One
 
+Sample
+------
+Checkout [sample app](https://github.com/MMAUG/MMFontLib/blob/master/sample).
 
-Usage
------
-Import the project into your Android Studio and add it as a "Module Dependency".
+Quick Start
+-----------
+MMFont Lib is pushed to Maven Central as an AAR, so you just need to add the following dependency to your build.gradle.
+
+```Groovy
+dependencies {
+    compile 'org.mmaug.mmfont:library:1.0.0'
+}
+```
 
 Replace your `TextView` with embedded view.
 
@@ -17,5 +31,3 @@ Replace your `TextView` with embedded view.
           android:layout_height="wrap_content"
           android:textSize="25sp" />
 ```
-
-Maven repo is coming soon.
