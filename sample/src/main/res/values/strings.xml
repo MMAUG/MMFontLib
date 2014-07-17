@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Sample</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+  <string name="app_name">Sample</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+
+  <!-- sorry for the ugly hack, should have used string formatters -->
+  <string name="mm3">Myanmar 3&#160;:&#160;</string>
+  <string name="msp">Masterpiece&#160;:&#160;</string>
+  <string name="mymm">MyMyanmar&#160;:&#160;</string>
+  <string name="ygk">Yunghkio&#160;:&#160;</string>
+  <string name="zg">Zawgyi One&#160;:&#160;</string>
+
+  <string name="zg_mm">ျမန္မာစာသည္တို႕စာ</string>
+  <string name="uni_mm">မြန်မာစာသည်တို့စာ</string>
 
 </resources>
