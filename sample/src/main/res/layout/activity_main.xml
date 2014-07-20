@@ -19,30 +19,28 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
-  <LinearLayout
-      android:orientation="vertical"
+  <RelativeLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:paddingLeft="@dimen/activity_horizontal_margin"
-      android:paddingRight="@dimen/activity_horizontal_margin"
-      android:paddingTop="@dimen/activity_vertical_margin"
-      android:paddingBottom="@dimen/activity_vertical_margin"
+      android:padding="@dimen/activity_horizontal_margin"
       tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/credit"
         android:text="@string/credit"
         android:padding="2dp"
+        android:layout_alignParentTop="true"
         android:textColor="@android:color/white"
         android:background="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <LinearLayout
+        android:id="@+id/mm3"
+        android:orientation="vertical"
         android:padding="@dimen/medium_padding"
+        android:layout_below="@id/credit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
       <TextView
@@ -59,7 +57,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/msp"
+        android:orientation="vertical"
         android:padding="@dimen/medium_padding"
+        android:layout_below="@id/mm3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
       <TextView
@@ -76,6 +77,9 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/my_mm"
+        android:layout_below="@id/msp"
+        android:orientation="vertical"
         android:padding="@dimen/medium_padding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -93,7 +97,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ygk"
+        android:orientation="vertical"
         android:padding="@dimen/medium_padding"
+        android:layout_below="@id/my_mm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
       <TextView
@@ -110,7 +117,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/zg"
+        android:orientation="vertical"
         android:padding="@dimen/medium_padding"
+        android:layout_below="@id/ygk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
       <TextView
@@ -125,5 +135,45 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
     </LinearLayout>
-  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noto_reuglar"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_padding"
+        android:layout_below="@id/zg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/noto_regular_label"
+          android:text="@string/noto_regular"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.Noto
+          android:text="@string/uni_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noto_bold"
+        android:padding="@dimen/medium_padding"
+        android:orientation="vertical"
+        android:layout_below="@id/noto_reuglar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/noto_bold_label"
+          android:text="@string/noto_bold"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.NotoBold
+          android:text="@string/uni_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+  </RelativeLayout>
 </ScrollView>
