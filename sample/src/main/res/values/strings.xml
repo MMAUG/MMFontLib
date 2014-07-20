@@ -12,7 +12,15 @@
   <string name="ygk">Yunghkio&#160;:&#160;</string>
   <string name="zg">Zawgyi One&#160;:&#160;</string>
 
-  <string name="zg_mm">ျမန္မာစာသည္တို႕စာ</string>
-  <string name="uni_mm">မြန်မာစာသည်တို့စာ</string>
+  <string name="zg_mm">သီဟိုဠ္မွ ဉာဏ္ႀကီးရွင္သည္ အာယုဝဍ္ဎနေဆးညႊန္းစာကို ဇလြန္ေဈးေဘးဗာဒံပင္ထက္
+    အဓိ႒ာန္လ်က္ ဂဃနဏဖတ္ခဲ့သည္
+  </string>
+  <string name="uni_mm">သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေးဗာဒံပင်ထက်
+    အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်
+  </string>
+
+  <string name="credit">Myanmar Pangram is created by Ko Maung Maung San : More at
+    http://lionslayer.yoeyar.com/?p=47
+  </string>
 
 </resources>

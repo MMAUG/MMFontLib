@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -24,89 +24,106 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
-
   <LinearLayout
-      android:padding="@dimen/medium_padding"
+      android:orientation="vertical"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/mm3_label"
-        android:text="@string/mm3"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <org.mmaug.mmfont.MM3
-        android:text="@string/uni_mm"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-  </LinearLayout>
+      android:layout_height="wrap_content"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/activity_vertical_margin"
+      android:paddingBottom="@dimen/activity_vertical_margin"
+      tools:context=".MainActivity">
 
-  <LinearLayout
-      android:padding="@dimen/medium_padding"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/msp_label"
-        android:text="@string/msp"
-        android:textColor="@android:color/black"
+        android:text="@string/credit"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <org.mmaug.mmfont.MSP
-        android:text="@string/uni_mm"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-  </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/mm3_label"
+          android:text="@string/mm3"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.MM3
+          android:text="@string/uni_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-  <LinearLayout
-      android:padding="@dimen/medium_padding"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/mymm_label"
-        android:text="@string/mymm"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <org.mmaug.mmfont.MyMM
-        android:text="@string/uni_mm"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-  </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/msp_label"
+          android:text="@string/msp"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.MSP
+          android:text="@string/uni_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-  <LinearLayout
-      android:padding="@dimen/medium_padding"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/ygk_label"
-        android:text="@string/ygk"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <org.mmaug.mmfont.YGK
-        android:text="@string/uni_mm"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-  </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/mymm_label"
+          android:text="@string/mymm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.MyMM
+          android:text="@string/uni_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-  <LinearLayout
-      android:padding="@dimen/medium_padding"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/zg_label"
-        android:text="@string/zg"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <org.mmaug.mmfont.ZG
-        android:text="@string/zg_mm"
-        android:textColor="@android:color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/ygk_label"
+          android:text="@string/ygk"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.YGK
+          android:text="@string/uni_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/medium_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/zg_label"
+          android:text="@string/zg"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <org.mmaug.mmfont.ZG
+          android:text="@string/zg_mm"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
   </LinearLayout>
-</LinearLayout>
+</ScrollView>
