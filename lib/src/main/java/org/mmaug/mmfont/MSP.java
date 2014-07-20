@@ -39,6 +39,6 @@ public class MSP extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/masterpiece.ttf"));
+    setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/msp.ttf"));
   }
 }
