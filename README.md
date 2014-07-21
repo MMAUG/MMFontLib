@@ -14,8 +14,8 @@ Sample
 ------
 Checkout [sample app](https://github.com/MMAUG/MMFontLib/blob/master/sample).
 
-<img src="https://cloud.githubusercontent.com/assets/275120/3637479/248483ea-100c-11e4-9a1a-0cb9412a3d16.png" alt="Screenshot 1" style="width: 300px; height: 500px;"/>
-<img src="https://cloud.githubusercontent.com/assets/275120/3637480/288b5c02-100c-11e4-881e-145234009cec.png" alt="Screenshot 2" style="width: 300px; height: 500px;"/>
+<img src="https://cloud.githubusercontent.com/assets/275120/3637479/248483ea-100c-11e4-9a1a-0cb9412a3d16.png" alt="Screenshot 1" width="300px" height="500px"/>
+<img src="https://cloud.githubusercontent.com/assets/275120/3637480/288b5c02-100c-11e4-881e-145234009cec.png" alt="Screenshot 2" width="300px" height="500px"/>
 
 
 Quick Start
