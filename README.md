@@ -14,6 +14,9 @@ Sample
 ------
 Checkout [sample app](https://github.com/MMAUG/MMFontLib/blob/master/sample).
 
+![Screenshot1](https://cloud.githubusercontent.com/assets/275120/3637479/248483ea-100c-11e4-9a1a-0cb9412a3d16.png =300x500)
+![Screenshot2](https://cloud.githubusercontent.com/assets/275120/3637480/288b5c02-100c-11e4-881e-145234009cec.png =300x500)
+
 Quick Start
 -----------
 MMFont Lib is pushed to Maven Central as an AAR, so you just need to add the following dependency to your build.gradle.
