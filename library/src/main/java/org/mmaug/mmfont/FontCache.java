@@ -1,3 +1,4 @@
+package org.mmaug.mmfont;
 /*
  * Copyright 2014 Myanmar Android User Group(MMAUG)
  *
@@ -14,7 +15,9 @@
  * limitations under the License.
  */
 
-package org.mmaug.mmfont;
+/*
+ * FontCache solution via http://stackoverflow.com/a/16902532/2438460
+ */
 
 import android.content.Context;
 import android.graphics.Typeface;
