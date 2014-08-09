@@ -17,7 +17,6 @@
 package org.mmaug.mmfont;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -39,6 +38,6 @@ public class MyMM extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/MyMM.ttf"));
+    setTypeface(FontCache.get("fonts/MyMM.ttf.ttf", context));
   }
 }
