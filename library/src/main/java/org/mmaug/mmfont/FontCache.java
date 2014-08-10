@@ -1,3 +1,4 @@
+package org.mmaug.mmfont;
 /*
  * Copyright 2014 Myanmar Android User Group(MMAUG)
  *
@@ -14,30 +15,30 @@
  * limitations under the License.
  */
 
-package org.mmaug.mmfont;
+/*
+ * FontCache solution via http://stackoverflow.com/a/16902532/2438460
+ */
 
 import android.content.Context;
-import android.util.AttributeSet;
-import android.widget.TextView;
+import android.graphics.Typeface;
+import java.util.Hashtable;
 
-public class MyMM extends TextView {
+/**
+ * Created by Ye Lin Aung on 14/08/09.
+ */
+public class FontCache {
+  private static Hashtable<String, Typeface> fontCache = new Hashtable<String, Typeface>();
 
-  public MyMM(Context context) {
-    super(context);
-    setStyle(context);
-  }
-
-  public MyMM(Context context, AttributeSet attrs) {
-    super(context, attrs);
-    setStyle(context);
-  }
-
-  public MyMM(Context context, AttributeSet attrs, int defStyle) {
-    super(context, attrs, defStyle);
-    setStyle(context);
-  }
-
-  private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/MyMM.ttf.ttf", context));
+  public static Typeface get(String name, Context context) {
+    Typeface tf = fontCache.get(name);
+    if (tf == null) {
+      try {
+        tf = Typeface.createFromAsset(context.getAssets(), name);
+      } catch (Exception e) {
+        return null;
+      }
+      fontCache.put(name, tf);
+    }
+    return tf;
   }
 }

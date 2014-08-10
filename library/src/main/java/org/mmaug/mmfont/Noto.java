@@ -17,7 +17,6 @@
 package org.mmaug.mmfont;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -41,6 +40,6 @@ public class Noto extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/NotoSansMyanmar-Regular.ttf"));
+    setTypeface(FontCache.get("fonts/NotoSansMyanmar-Regular.ttf", context));
   }
 }
