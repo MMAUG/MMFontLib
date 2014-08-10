@@ -37,6 +37,6 @@ public class YGK extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/yunghkio.ttf", context));
+    setTypeface(FontCache.get("yunghkio.ttf", context));
   }
 }

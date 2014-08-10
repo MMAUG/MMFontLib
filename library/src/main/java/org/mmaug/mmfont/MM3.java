@@ -38,6 +38,6 @@ public class MM3 extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/mm3.ttf", context));
+    setTypeface(FontCache.get("mm3.ttf", context));
   }
 }

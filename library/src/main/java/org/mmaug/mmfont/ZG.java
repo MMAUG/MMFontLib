@@ -37,6 +37,6 @@ public class ZG extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/zawgyi.ttf", context));
+    setTypeface(FontCache.get("zawgyi.ttf", context));
   }
 }

@@ -37,7 +37,7 @@ public class FontCache {
       } catch (Exception e) {
         return null;
       }
-      fontCache.put(name, tf);
+      fontCache.put(name, "fonts/" + tf);
     }
     return tf;
   }

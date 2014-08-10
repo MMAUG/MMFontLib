@@ -38,6 +38,6 @@ public class MyMM extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/MyMM.ttf.ttf", context));
+    setTypeface(FontCache.get("MyMM.ttf", context));
   }
 }
