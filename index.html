@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mmfontlib by MMAUG</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/MMAUG/MMFontLib">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/MMAUG/MMFontLib/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/MMAUG/MMFontLib/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Mmfontlib</h1>
+          <p>Myanmar Font Embedded TextViews</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/MMAUG">MMAUG</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="mmfontlib" class="anchor" href="#mmfontlib"><span class="octicon octicon-link"></span></a>MMFontLib</h1>
+
+<p>Myanmar font embedded TextViews. Currently, it supports</p>
+
+<ul>
+<li>Myanmar 3</li>
+<li>Masterpiece</li>
+<li>MyMyanmar</li>
+<li>Yunghkio</li>
+<li>Zawgyi One</li>
+<li>NotoSans Myanmar Regular</li>
+<li>NotoSans Myanmar Bold</li>
+</ul><h2>
+<a name="sample" class="anchor" href="#sample"><span class="octicon octicon-link"></span></a>Sample</h2>
+
+<p>Checkout <a href="https://github.com/MMAUG/MMFontLib/blob/master/sample">sample app</a>.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/275120/3637479/248483ea-100c-11e4-9a1a-0cb9412a3d16.png" alt="Screenshot 1" width="300px" height="500px"><img src="https://cloud.githubusercontent.com/assets/275120/3637480/288b5c02-100c-11e4-881e-145234009cec.png" alt="Screenshot 2" width="300px" height="500px"></p>
+
+<h2>
+<a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick Start</h2>
+
+<p>MMFont Lib is pushed to Maven Central as an AAR, so you just need to add the following dependency to your build.gradle.</p>
+
+<div class="highlight highlight-Groovy"><pre><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span> <span class="s1">'org.mmaug.mmfont:library:1.1.0'</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>Replace your <code>TextView</code> with embedded view.</p>
+
+<div class="highlight highlight-xml"><pre><span class="c">&lt;!-- Myanmar3 Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.MM3</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_mm3"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Masterpiece Uni Round Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.MSP</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_msp"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- MyMyanmar Universal Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.MyMM</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_mymm"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Noto Sans Myanmar Regular Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.Noto</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_noto"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Noto Sans Myanmar Bold Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.NotoBold</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_noto_bold"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Yunghkio Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.YGK</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_ygk"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Zawgyi-One Font --&gt;</span>
+<span class="nt">&lt;org.mmaug.mmfont.ZG</span>
+    <span class="na">android:id=</span><span class="s">"@+id/tv_zg"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:textSize=</span><span class="s">"25sp"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>Copyright 2014 Myanmar Android User Group(MMAUG)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+
+<p>Fonts are respectively copyrighted by font owners.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
