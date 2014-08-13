@@ -40,6 +40,6 @@ public class NotoBold extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/NotoSansMyanmar-Bold.ttf", context));
+    setTypeface(FontCache.get("NotoSansMyanmar-Bold.ttf", context));
   }
 }

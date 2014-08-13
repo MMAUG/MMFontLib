@@ -33,7 +33,7 @@ public class FontCache {
     Typeface tf = fontCache.get(name);
     if (tf == null) {
       try {
-        tf = Typeface.createFromAsset(context.getAssets(), name);
+        tf = Typeface.createFromAsset(context.getAssets(), "fonts/" + name);
       } catch (Exception e) {
         return null;
       }

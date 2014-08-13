@@ -31,8 +31,51 @@ dependencies {
 Replace your `TextView` with embedded view.
 
 ```xml
-<org.mmodroid.mmfont.MM3
+<!-- Myanmar3 Font -->
+<org.mmaug.mmfont.MM3
     android:id="@+id/tv_mm3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp" />
+
+<!-- Masterpiece Uni Round Font -->
+<org.mmaug.mmfont.MSP
+    android:id="@+id/tv_msp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp" />
+
+<!-- MyMyanmar Universal Font -->
+<org.mmaug.mmfont.MyMM
+    android:id="@+id/tv_mymm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp" />
+
+<!-- Noto Sans Myanmar Regular Font -->
+<org.mmaug.mmfont.Noto
+    android:id="@+id/tv_noto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp" />
+
+<!-- Noto Sans Myanmar Bold Font -->
+<org.mmaug.mmfont.NotoBold
+    android:id="@+id/tv_noto_bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp" />
+
+<!-- Yunghkio Font -->
+<org.mmaug.mmfont.YGK
+    android:id="@+id/tv_ygk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp" />
+
+<!-- Zawgyi-One Font -->
+<org.mmaug.mmfont.ZG
+    android:id="@+id/tv_zg"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="25sp" />

@@ -38,6 +38,6 @@ public class MSP extends TextView {
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("fonts/msp.ttf", context));
+    setTypeface(FontCache.get("msp.ttf", context));
   }
 }
