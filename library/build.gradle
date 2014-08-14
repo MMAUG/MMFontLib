@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-  compileSdkVersion 19
+  compileSdkVersion 20
   buildToolsVersion "20.0.0"
 
   defaultConfig {
     applicationId "mmaug.mmfont"
     minSdkVersion 8
-    targetSdkVersion 19
+    targetSdkVersion 20
   }
 }
 
