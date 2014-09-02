@@ -1,5 +1,5 @@
-MMFont
-======
+MMFontLib
+=========
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.mmaug.mmfont/library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.mmaug.mmfont/library/badge.svg)
 
