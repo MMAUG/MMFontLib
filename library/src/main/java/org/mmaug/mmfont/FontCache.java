@@ -35,7 +35,7 @@ public class FontCache {
       try {
         tf = Typeface.createFromAsset(context.getAssets(), "fonts/" + name);
       } catch (Exception e) {
-        return null;
+        e.printStackTrace();
       }
       fontCache.put(name, tf);
     }
