@@ -14,30 +14,30 @@
  * limitations under the License.
  */
 
-package org.mmaug.mmfont;
+package org.mmaug.mmfont.fonts;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
+import org.mmaug.mmfont.FontCache;
 
-public class MSP extends TextView {
-
-  public MSP(Context context) {
+public class YGK extends TextView {
+  public YGK(Context context) {
     super(context);
     setStyle(context);
   }
 
-  public MSP(Context context, AttributeSet attrs) {
+  public YGK(Context context, AttributeSet attrs) {
     super(context, attrs);
     setStyle(context);
   }
 
-  public MSP(Context context, AttributeSet attrs, int defStyle) {
+  public YGK(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
     setStyle(context);
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("msp.ttf", context));
+    setTypeface(FontCache.get("yunghkio.ttf", context));
   }
 }

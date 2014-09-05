@@ -14,30 +14,30 @@
  * limitations under the License.
  */
 
-package org.mmaug.mmfont;
+package org.mmaug.mmfont.fonts;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
+import org.mmaug.mmfont.FontCache;
 
-public class MyMM extends TextView {
-
-  public MyMM(Context context) {
+public class ZG extends TextView {
+  public ZG(Context context) {
     super(context);
     setStyle(context);
   }
 
-  public MyMM(Context context, AttributeSet attrs) {
+  public ZG(Context context, AttributeSet attrs) {
     super(context, attrs);
     setStyle(context);
   }
 
-  public MyMM(Context context, AttributeSet attrs, int defStyle) {
+  public ZG(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
     setStyle(context);
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("MyMM.ttf", context));
+    setTypeface(FontCache.get("zawgyi.ttf", context));
   }
 }

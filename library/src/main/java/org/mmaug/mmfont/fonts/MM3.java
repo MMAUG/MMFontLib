@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package org.mmaug.mmfont;
+package org.mmaug.mmfont.fonts;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
+import org.mmaug.mmfont.FontCache;
 
 public class MM3 extends TextView {
 
