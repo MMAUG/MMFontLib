@@ -1,4 +1,3 @@
-package org.mmaug.mmfont;
 /*
  * Copyright 2014 Myanmar Android User Group(MMAUG)
  *
@@ -18,6 +17,8 @@ package org.mmaug.mmfont;
 /*
  * FontCache solution via http://stackoverflow.com/a/16902532/2438460
  */
+
+package org.mmaug.mmfont.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

@@ -19,7 +19,7 @@ package org.mmaug.mmfont.fonts;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
-import org.mmaug.mmfont.FontCache;
+import org.mmaug.mmfont.utils.FontCache;
 
 public class ZG extends TextView {
   public ZG(Context context) {
