@@ -49,7 +49,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.MM3
+      <org.mmaug.mmfont.fonts.MM3
           android:text="@string/uni_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.MSP
+      <org.mmaug.mmfont.fonts.MSP
           android:text="@string/uni_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
@@ -89,7 +89,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.MyMM
+      <org.mmaug.mmfont.fonts.MyMM
           android:text="@string/uni_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.YGK
+      <org.mmaug.mmfont.fonts.YGK
           android:text="@string/uni_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.ZG
+      <org.mmaug.mmfont.fonts.ZG
           android:text="@string/zg_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
@@ -149,7 +149,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.Noto
+      <org.mmaug.mmfont.fonts.Noto
           android:text="@string/uni_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
-      <org.mmaug.mmfont.NotoBold
+      <org.mmaug.mmfont.fonts.NotoBold
           android:text="@string/uni_mm"
           android:textColor="@android:color/black"
           android:layout_width="wrap_content"

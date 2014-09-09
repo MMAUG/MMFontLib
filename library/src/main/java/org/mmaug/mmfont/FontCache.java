@@ -26,16 +26,22 @@ import java.util.Hashtable;
 /**
  * Created by Ye Lin Aung on 14/08/09.
  */
+
 public class FontCache {
   private static Hashtable<String, Typeface> fontCache = new Hashtable<String, Typeface>();
 
+  /**
+   * @param name - name of the font with *.ttf extention
+   * @param context - require context for getAssets
+   * @return the new Typeface
+   */
   public static Typeface get(String name, Context context) {
     Typeface tf = fontCache.get(name);
     if (tf == null) {
       try {
         tf = Typeface.createFromAsset(context.getAssets(), "fonts/" + name);
       } catch (Exception e) {
-        return null;
+        e.printStackTrace();
       }
       fontCache.put(name, tf);
     }

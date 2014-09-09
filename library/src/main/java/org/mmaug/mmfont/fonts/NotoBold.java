@@ -14,32 +14,33 @@
  * limitations under the License.
  */
 
-package org.mmaug.mmfont;
+package org.mmaug.mmfont.fonts;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
+import org.mmaug.mmfont.FontCache;
 
 /**
  * Created by Ye Lin Aung on 14/07/19.
  */
-public class Noto extends TextView {
-  public Noto(Context context) {
+public class NotoBold extends TextView {
+  public NotoBold(Context context) {
     super(context);
     setStyle(context);
   }
 
-  public Noto(Context context, AttributeSet attrs) {
+  public NotoBold(Context context, AttributeSet attrs) {
     super(context, attrs);
     setStyle(context);
   }
 
-  public Noto(Context context, AttributeSet attrs, int defStyle) {
+  public NotoBold(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
     setStyle(context);
   }
 
   private void setStyle(Context context) {
-    setTypeface(FontCache.get("NotoSansMyanmar-Regular.ttf", context));
+    setTypeface(FontCache.get("NotoSansMyanmar-Bold.ttf", context));
   }
 }
