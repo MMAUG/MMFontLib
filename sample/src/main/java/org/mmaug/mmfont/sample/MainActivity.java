@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2014 Myanmar Android User Group(MMAUG)
  *
@@ -19,6 +18,9 @@ package org.mmaug.mmfont.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.widget.TextView;
+import org.mmaug.mmfont.utils.FontUtils;
+import org.mmaug.mmfont.utils.Fonts;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -26,5 +28,15 @@ public class MainActivity extends ActionBarActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
+    TextView zgTextView = (TextView) findViewById(R.id.custom_zg_text);
+    TextView uniTextView = (TextView) findViewById(R.id.custom_uni_text);
+
+    FontUtils fontUtils = new FontUtils(this);
+    zgTextView.setText(R.string.zg_mm);
+    uniTextView.setText(R.string.uni_mm);
+
+    fontUtils.setTypeFace(Fonts.ZG, zgTextView);
+    fontUtils.setTypeFace(Fonts.MM3, uniTextView);
   }
 }

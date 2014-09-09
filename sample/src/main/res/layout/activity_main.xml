@@ -175,5 +175,44 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
     </LinearLayout>
+
+    <View
+        android:id="@+id/divider_1"
+        android:orientation="vertical"
+        android:layout_below="@+id/noto_bold"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"/>
+
+    <LinearLayout
+        android:id="@+id/zg_custom_wrapper"
+        android:padding="@dimen/medium_padding"
+        android:orientation="vertical"
+        android:layout_below="@id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/setting_custom_font_label"
+          android:text="@string/setting_custom_font"
+          android:textColor="@android:color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/custom_zg_text"
+          tools:text="@string/zg_mm"
+          android:padding="@dimen/activity_horizontal_margin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/custom_uni_text"
+          tools:text="@string/uni_mm"
+          android:padding="@dimen/activity_horizontal_margin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+
   </RelativeLayout>
 </ScrollView>

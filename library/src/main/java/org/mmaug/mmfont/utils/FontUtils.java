@@ -26,28 +26,32 @@ import android.widget.TextView;
  */
 public class FontUtils {
 
+  private Context mContext;
+
+  public FontUtils(Context context) {
+    this.mContext = context;
+  }
+
   /**
    * TextView တစ်ခုကို Typeface set လုပ်ခြင်း
    *
    * @param fontName embed လုပ်မည့် font အမည်
-   * @param context ဖောင့်များကို {@link FontCache} မှ တဆင့် load လုပ်ရန်အတွက် လိုအပ်သည့် Context
    * @param textView Typeface set လုပ်မည့် TextView
    */
 
-  public static void setTypeFace(String fontName, Context context, TextView textView) {
-    textView.setTypeface(FontCache.get(fontName, context));
+  public void setTypeFace(String fontName, TextView textView) {
+    textView.setTypeface(FontCache.get(fontName, mContext));
   }
 
   /**
    * TextViews များကို Typeface set လုပ်ခြင်း
    *
    * @param fontName embed လုပ်မည့် font အမည်
-   * @param context ဖောင့်များကို {@link FontCache} မှ တဆင့် load လုပ်ရန်အတွက် လိုအပ်သည့် Context
    * @param textViews Typeface set လုပ်မည့် TextView များ
    */
-  public static void setTypeFace(String fontName, Context context, TextView... textViews) {
+  public void setTypeFace(String fontName, TextView... textViews) {
     for (TextView t : textViews) {
-      t.setTypeface(FontCache.get(fontName, context));
+      t.setTypeface(FontCache.get(fontName, mContext));
     }
   }
 }
