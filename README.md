@@ -32,6 +32,9 @@ dependencies {
 
 Replace your `TextView` with embedded view.
 
+
+#### Using the custom TextViews in the XML
+
 ```xml
 <!-- Myanmar3 Font -->
 <org.mmaug.mmfont.MM3
@@ -81,6 +84,24 @@ Replace your `TextView` with embedded view.
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="25sp" />
+```
+
+#### Setting Custom Typeface to a TextView
+```java
+    // TextView you want to set typeface
+    TextView uniTextView = (TextView) findViewById(R.id.custom_uni_text);
+    // Create a FontUtils instance. The Argument is a Context
+    FontUtils fontUtils = new FontUtils(this);
+    // Set Text to your TextView either here or in XML
+    uniTextView.setText("သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေးဗာဒံပင်ထက်
+                             အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်");
+                             
+    // Set Typeface to your TextView by choosing the font name
+    // See more fonts at 
+    fontUtils.setTypeFace(Fonts.ZG, zgTextView);
+    
+    // You can set Typeface to several TextViews    
+    fontUtils.setTypeFace(Fonts.ZG, TextView1, TextView2, TextView3);
 ```
 
 Contributing
