@@ -97,12 +97,13 @@ Replace your `TextView` with embedded view.
                              အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်");
                              
     // Set Typeface to your TextView by choosing the font name
-    // See more fonts at 
     fontUtils.setTypeFace(Fonts.ZG, zgTextView);
     
     // You can set Typeface to several TextViews    
     fontUtils.setTypeFace(Fonts.ZG, TextView1, TextView2, TextView3);
 ```
+
+You can see the list of available fonts [here](https://github.com/MMAUG/MMFontLib/blob/master/library%2Fsrc%2Fmain%2Fjava%2Forg%2Fmmaug%2Fmmfont%2Futils%2FFonts.java).
 
 Contributing
 ------------
