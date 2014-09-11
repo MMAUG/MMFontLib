@@ -26,7 +26,7 @@ MMFont Lib is pushed to Maven Central as an AAR, so you just need to add the fol
 
 ```Groovy
 dependencies {
-    compile 'org.mmaug.mmfont:library:1.2.0'
+    compile 'org.mmaug.mmfont:library:1.3.0'
 }
 ```
 
